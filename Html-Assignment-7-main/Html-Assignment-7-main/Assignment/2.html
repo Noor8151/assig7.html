@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marks Calculation</title>
+    <link rel="stylesheet" href="2.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Marks Calculation</h1>
+      <form id="marks-form">
+        <div class="input-group">
+          <label for="M1">Subject 1</label>
+          <input
+            type="number"
+            id="subject1"
+            name="subject1"
+            placeholder="Enter marks"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="M2">Subject 2</label>
+          <input
+            type="number"
+            id="subject2"
+            name="subject2"
+            placeholder="Enter marks"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="M3">Subject 3</label>
+          <input
+            type="number"
+            id="subject3"
+            name="subject3"
+            placeholder="Enter marks"
+            required
+          />
+        </div>
+
+        <button type="submit" id="calculate">Calculate</button>
+      </form>
+
+      <div id="result" class="result" style="display: none">
+        <h2>Results</h2>
+        <p>Total Marks: <span id="total-marks"></span></p>
+        <p>Percentage: <span id="percentage"></span>%</p>
+        <p>Grade: <span id="grade"></span></p>
+      </div>
+    </div>
+
+    <script src="2.js"></script>
+  </body>
+</html>
